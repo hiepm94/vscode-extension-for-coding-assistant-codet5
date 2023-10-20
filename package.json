@@ -1,5 +1,5 @@
 {
-  "name": "codet5-",
+  "name": "codet5p",
   "displayName": "CodeT5+",
   "description": "",
   "version": "0.0.1",
@@ -9,23 +9,20 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["onDidChangeTextEditorSelection"],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "codet5-.summarizeCode",
-        "title": "CodeT5+: Summarize selected code"
-      },
-      {
-        "command": "codet5-.autocompleteCode",
-        "title": "CodeT5+: Autocomplete selected code"
-      },
-      {
-        "command": "codet5-.autocompleteCodePython",
-        "title": "CodeT5+: Autocomplete selected code (Python)"
+        "command": "codet5p.showQuickPick",
+        "title": "CodeT5+"
       }
-    ]
+    ],
+    "capabilities": {
+      "window": {
+        "showQuickPick": true
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
