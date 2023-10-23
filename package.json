@@ -15,7 +15,15 @@
     "commands": [
       {
         "command": "codet5p.showQuickPick",
-        "title": "CodeT5+"
+        "title": "CodeT5+ 4 Developer"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "codet5p.showQuickPick",
+        "key": "ctrl+alt+c",
+        "mac": "cmd+alt+c",
+        "when": "editorTextFocus"
       }
     ],
     "capabilities": {
