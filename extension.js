@@ -17,7 +17,7 @@ function activate(context) {
           switch (selectedAction) {
             case 'CodeT5+: Code Summarization':
               try {
-                const response = await axios.post('http://127.0.0.1:5000/api/summarizeModel', {
+                const response = await axios.post('http://192.168.5.202:5000/api/summarizeModel', {
                   text: selectedText
                 });
           
@@ -37,7 +37,7 @@ function activate(context) {
           
             case 'CodeT5+: Code Autocompletion':
               try {
-                const response = await axios.post('http://127.0.0.1:5000/api/autocompleteModel', {
+                const response = await axios.post('http://192.168.5.202:5000/api/autocompleteModel', {
                   text: selectedText
                 });
           
@@ -57,7 +57,7 @@ function activate(context) {
             
             case 'CodeT5+: Code Autocompletion (Python specific)':
               try {
-                const response = await axios.post('http://127.0.0.1:5000/api/autocompleteModelPython', {
+                const response = await axios.post('http://192.168.5.202:5000/api/autocompleteModelPython', {
                   text: selectedText
                 });
           
@@ -77,7 +77,7 @@ function activate(context) {
             
             case 'CodeT5+: Text-to-code Generatation':
               try {
-                const response = await axios.post('http://127.0.0.1:5000/api/gencodeModel', {
+                const response = await axios.post('http://192.168.5.202:5000/api/gencodeModel', {
                   text: selectedText
                 });
           
@@ -96,7 +96,7 @@ function activate(context) {
               break;
             case 'CodeT5+: Text-to-code Generatation (Python specific)':
               try {
-                const response = await axios.post('http://127.0.0.1:5000/api/gencodeModelPython', {
+                const response = await axios.post('http://192.168.5.202:5000/api/gencodeModelPython', {
                   text: selectedText
                 });
           
