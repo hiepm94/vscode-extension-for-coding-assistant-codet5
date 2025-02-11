@@ -1,4 +1,4 @@
-# CodeT5+ 4 Developer Extension - a VSCode Extension for coding assistant: generate, summarize and auto-complete code
+# CodeT5+ 4 Developer - a VSCode Extension for coding assistant: generate, summarize and auto-complete code using CodeT5+ model
 
 ## Description
 CodeT5+ 4 Developer is a powerful extension for Visual Studio Code that enhances your coding experience with three main functions: code generation from text, code summarization, and intelligent code auto-complete. With CodeT5, you can effortlessly generate code snippets from text, summarize complex code blocks, and enjoy smart code suggestions.
